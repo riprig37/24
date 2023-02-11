@@ -871,7 +871,7 @@ height: auto;
   justify-content: space-between;
   align-items: center;
   padding: 0.5em 1em;
-  width: 18em;
+  width: 150px;
   color: #2285b1;
   font-size: 1em;
   font-weight: 700;
@@ -1019,7 +1019,7 @@ align-items: center;
       justify-content: space-between;
       align-items: center;
       padding: 0.5em 1em;
-      width: 18em;
+      width: 150px;
       color: #2285b1;
       font-size: 1em;
       font-weight: 700;
@@ -2238,7 +2238,7 @@ margin-right: 10px;
         }
       .div03 {
         grid-area: 2 / 1 / 3 / 3;
-        font-size: 6px;
+        font-size: 1em;
         line-height:12px;
          text-align: left;
          vertical-align:middle;
@@ -2256,7 +2256,7 @@ margin-right: 10px;
           margin-left: 20vw;
           color: #000;
           line-height: 2em;
-          font-size: 0.5em;
+          font-size: 1em;
           font-family: "sans-serif" ;
           overflow-wrap: anywhere;
           flex-wrap: wrap;
@@ -2710,7 +2710,7 @@ margin-right: 10px;
       justify-content: space-between;
       align-items: center;
       padding: 0.5em 1em;
-      width: 18em;
+      width: 150px;
       color: #2285b1;
       font-size: 1vw;
       font-weight: 700;
@@ -2776,7 +2776,7 @@ footer #ftEntry h2{
 
 .rectuit-logo{
   max-width: 130px;
-  margin: 2em -200px -2em 2em;
+  margin: 10px;
 }
 
 #icon {
