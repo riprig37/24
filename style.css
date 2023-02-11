@@ -2238,7 +2238,7 @@ margin-right: 10px;
         }
       .div03 {
         grid-area: 2 / 1 / 3 / 3;
-        font-size: 1em;
+        font-size: 0.8em;
         line-height:12px;
          text-align: left;
          vertical-align:middle;
@@ -2253,10 +2253,10 @@ margin-right: 10px;
       }
 
         .wrap_mes {
-          margin-left: 20vw;
+          margin-left: 15vw;
           color: #000;
           line-height: 2em;
-          font-size: 1em;
+          font-size: 0.8em;
           font-family: "sans-serif" ;
           overflow-wrap: anywhere;
           flex-wrap: wrap;
