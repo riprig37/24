@@ -472,10 +472,28 @@ a.border-radius:hover {
 	transform: translateX(100px);
 }
 @media screen and (min-width: 980px) {
-  #page-top {
-    right:9px;
+  .top-view {
+    display: flex;
+    position: relative;
+    margin-top: 0px;
+    justify-content: center;
+  }
+  
+  .top-title {
+    margin: 0 0 0 4%;
+    z-index: 5;
   }
 
+  .top-title h1{
+    writing-mode: vertical-rl;
+      font-size: 55px;
+      overflow-wrap: anywhere;
+      z-index: 5;
+      flex-wrap: wrap;
+      font-weight: 900;
+      line-height: 300%;
+      letter-spacing: 0.1em
+  }
 }
 /*　左の動き　*/
 
