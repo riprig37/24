@@ -1530,16 +1530,20 @@ position: sticky;
 
 
     .inner{
-      width:100%;
+
       margin:5vw auto;
     }
-    }
+    
     
 @media screen and (max-width: 540px){
 #icon {
     overflow: hidden;
     margin-top: 10px;
     padding-bottom: 20px;
+}
+.inner{
+  width:100%;
+  margin:5vw auto;
 }
 }
         @media screen and (max-width: 550px) {
