@@ -1002,7 +1002,7 @@ position: sticky;
         letter-spacing: 0.1em
     }
     .top-title h3{
-      margin: 20px 10px 30px 0;
+      margin: 20px 10px 20px 0;
         font-size: 1rem;
         z-index: 5;
         text-align: center;
@@ -1017,7 +1017,7 @@ position: sticky;
       justify-content: center;
     }
     a.btn-top{
-      padding: 0.5em;
+      padding: 1em;
       color: #fff !important;
       background: #4E9BFF;
       text-decoration: none;
@@ -1064,7 +1064,7 @@ position: sticky;
           margin: 20px;
       }
         .message {
-          margin-left: 40px;
+          margin-left: 45px;
           color: #000;
         
           font-family: "sans-serif" ;
@@ -1076,7 +1076,7 @@ position: sticky;
         .txt01 {
           animation-delay: 1s;
           line-height: 3em;
-          font-size: 0.5em;
+          font-size: 1em;
         }
     
     
@@ -1223,9 +1223,9 @@ position: sticky;
     }
 
     a.entry-button {
-      width: 70px;
-      height: 70px;
-      line-height: 70px;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
       background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
       border-radius: 50%;
       color: #000000;
