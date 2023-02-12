@@ -1061,7 +1061,7 @@ position: sticky;
           overflow-wrap: anywhere;
           flex-wrap: wrap;
           z-index: 2;
-          margin-top: -20px;
+          margin-top: 0px;
         }
         .txt01 {
           animation-delay: 1s;
