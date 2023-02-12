@@ -563,7 +563,6 @@ align-items: center;
       margin-left: auto;
     margin-right:50px;
     margin-top: 2%;
-    margin-bottom: 20px;
     }
     
     .interview-btn-viewmore a::after {
@@ -1291,12 +1290,8 @@ position: sticky;
       opacity: .7;
     }
     
-    .side_link li:nth-child(2) a {
-      background: #E3C520;
-    }
-    
     .side_link p {
-      width: 1em;
+      width: 0.5em;
       font-weight: inherit;
     }
     
@@ -1315,28 +1310,28 @@ position: sticky;
       display: none;
     }
     .slider{
-      width:80%;
+      width:100%;
       margin:0 auto;
     }
     
     /*------ スライダー画像 ------*/
     .slider img{
-      width:50%;
+      width:35%;
       margin:0 auto;
     }
     
     /*-------- 高さ調整 ----------*/
     .slider .slick-slide{
-      height:auto!important;
+      height:50%!important;
     }
     
     /*---------- 矢印 ----------*/
     .slider .slick-next{
-        right:-35px!important;
+        right:0px!important;
     
     }
     .slider .slick-prev{
-        left:-50px!important;
+        left:0px!important;
         z-index: 1;
     
     }
@@ -1347,7 +1342,7 @@ position: sticky;
     
     }
     .slider .slick-arrow:before{
-        font-size: 50px!important;
+        font-size: 25px!important;
       }
 
   @keyframes bugfix {
@@ -1467,11 +1462,11 @@ position: sticky;
   margin:0 auto;
   width: 100vw;
   background-color: #4E9BFF;
-    padding-bottom: 15px;
+
 }
 .interview-wrap {
   color:#fff;
-  font-size: 7vw;
+  font-size: 2em;
 }
 
 
