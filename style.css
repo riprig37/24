@@ -992,7 +992,7 @@ position: sticky;
     
     .top-title h1{
       writing-mode: vertical-rl;
-        font-size: 45px;
+        font-size: 42px;
         line-height: 1.3;
         overflow-wrap: anywhere;
         z-index: 5;
@@ -1009,7 +1009,7 @@ position: sticky;
     }
     
     .btn-view{
-      margin: 20px 20px 0px 20px;
+      margin: 20px 20px 0px 10px;
     
       display: flex;
       position: relative;
@@ -1064,19 +1064,18 @@ position: sticky;
           margin: 20px;
       }
         .message {
-          margin-left: 45px;
+          margin-left: 50px;
           color: #000;
         
           font-family: "sans-serif" ;
           overflow-wrap: anywhere;
           flex-wrap: wrap;
-          margin-top: 20px;
           z-index: 2;
         }
         .txt01 {
           animation-delay: 1s;
           line-height: 3em;
-          font-size: 1em;
+          font-size: 1.2em;
         }
     
     
