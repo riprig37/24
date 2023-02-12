@@ -978,7 +978,7 @@ position: sticky;
       .top-view{
         display: flex;
         position: relative;
-        margin-top: 40px;
+        margin-top: 30px;
         justify-content: center;
     }
     
@@ -1006,7 +1006,7 @@ position: sticky;
     }
     
     .btn-view{
-      margin: 40px 20px 0px 20px;
+      margin: 30px 20px 0px 20px;
     
       display: flex;
       position: relative;
@@ -1063,7 +1063,7 @@ position: sticky;
         .message {
           margin-left: 50px;
           color: #000;
-          line-height: 2em;
+          line-height: 1em;
           font-size: 0.7em;
           font-family: "sans-serif" ;
           overflow-wrap: anywhere;
@@ -1316,7 +1316,7 @@ position: sticky;
     
     /*------ スライダー画像 ------*/
     .slider img{
-      width:35%;
+      width:33%;
       margin:0 auto;
     }
     
@@ -1327,11 +1327,11 @@ position: sticky;
     
     /*---------- 矢印 ----------*/
     .slider .slick-next{
-        right:0px!important;
+        right:20px!important;
     
     }
     .slider .slick-prev{
-        left:0px!important;
+        left:20px!important;
         z-index: 1;
     
     }
