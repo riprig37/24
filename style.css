@@ -53,7 +53,7 @@ p {
 }
 .top-title h1{
   writing-mode: vertical-rl;
-    font-size: 80px;
+    font-size: 75px;
     overflow-wrap: anywhere;
     z-index: 5;
     flex-wrap: wrap;
@@ -204,22 +204,43 @@ a.btn-top:hover{
   
   input[type=checkbox]:checked ~ #overlay {
     visibility: visible; 
+    animation-name: sha;/*1で解説*/
+animation-fill-mode:forwards;/*2で解説*/
+animation-duration:0.5s;/*3で解説*/
+animation-iteration-count:1;/*4で解説*/
+animation-timing-function:ease;/*5で解説*/
+animation-direction:normal;/*7で解説*/
   }
   
   input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
     background: transparent;
-    
-    
+    animation-fill-mode:forwards;/*2で解説*/
+animation-duration:0.5s;/*3で解説*/
+animation-iteration-count:1;/*4で解説*/
+animation-timing-function:ease;/*5で解説*/
+animation-direction:normal;/*7で解説*/
   }
+    
+  
   input[type=checkbox]:checked ~ #overlay-button span:before {
     transform: rotate(45deg) translate(7px, 5px);
+    animation-fill-mode:forwards;/*2で解説*/
+    animation-duration:0.5s;/*3で解説*/
+    animation-iteration-count:1;/*4で解説*/
+    animation-timing-function:ease;/*5で解説*/
+    animation-direction:normal;/*7で解説*/
+      }
   
-  }
   input[type=checkbox]:checked ~ #overlay-button span:after {
     transform: rotate(-45deg) translate(7px, -5px);
   
   
-  }
+    animation-fill-mode:forwards;/*2で解説*/
+    animation-duration:0.5s;/*3で解説*/
+    animation-iteration-count:1;/*4で解説*/
+    animation-timing-function:ease;/*5で解説*/
+    animation-direction:normal;/*7で解説*/
+      }
   
   #overlay {
     width: 100vw;
@@ -228,7 +249,16 @@ a.btn-top:hover{
     visibility: hidden;
     position: fixed;
     margin-top: 550px;
+
+    
+}
+
+/*1で解説*/
+@keyframes sha{
+  0% {
+    opacity: 0;
   }
+}
   #overlay ul {
     display: flex;
     justify-content: center;
@@ -238,6 +268,7 @@ a.btn-top:hover{
     height: 200vh;
     padding-left: 0;
     list-style-type: none;
+    transition: transform 1s linear 0s;
   }
   #overlay ul li {
     padding: 1em;
@@ -281,27 +312,27 @@ a.entry-button {
   width: 120px;
   height: 120px;
   line-height: 120px;
-  background-image: linear-gradient(to top, #D8D9DB 0%, #ffffff 80%, #fdfdfd 100%);
+  background-image: linear-gradient(to top, #ffffff 0%, #ffffff 80%, #ffffff 100%);
   border-radius: 50%;
   color: #000000;
   text-shadow: 0 1px #fff;
   text-align: center;
   font-size: 1.5rem;
   cursor: pointer;
-  border: 1px solid #000000;
+  border: 5px solid #000000;
   font-family: sans-serif;
   transition: all 0.2s ease;
   z-index: 5;
   position:fixed;	
-bottom:50px;
-right:50px;
+bottom:60px;
+right:60px;
 }
 a.entry-button:hover {
-  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+  transform: scale(1.2);
 }
 
 a.entry-button:active {
-  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+  box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
 }
 
 a.entry-button:focus {
@@ -839,7 +870,7 @@ font-size: 16px
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
       width: 48px;
-      height: 216px;
+      height: 240px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -890,7 +921,7 @@ font-size: 16px
       flex-wrap: wrap;
       font-weight: 700;
       color: #4E9BFF;
-      margin-top: 60px;
+      margin-top: 40px;
   }
 
 @media screen and (max-width: 550px) {
@@ -1188,6 +1219,7 @@ position: sticky;
     visibility: hidden;
     position: fixed;
     margin-top: 430px;
+    
   }
   #overlay ul li a {
     color: #fff;
@@ -1210,14 +1242,14 @@ position: sticky;
       width: 80px;
       height: 80px;
       line-height: 80px;
-      background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+      background-image: linear-gradient(to top, #ffffff 0%, #ffffff 80%, #ffffff 100%);
       border-radius: 50%;
       color: #000000;
       text-shadow: 0 1px #fff;
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 1rem;
       cursor: pointer;
-      border: 1px solid #8F9092;
+      border: 5px solid #000000;
       font-family: sans-serif;
       transition: all 0.2s ease;
       z-index: 5;
@@ -1226,7 +1258,7 @@ position: sticky;
     right:10px;
     }
     a.entry-button:hover {
-      box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+      transform: scale(1.1);
     }
     
     a.entry-button:active {
@@ -1403,7 +1435,7 @@ position: sticky;
         border-top: 3px solid #333333;
         border-right: 3px solid #333333;
       }
-    }
+    
   @keyframes bugfix {
     from {
       padding: 0;
@@ -1498,8 +1530,8 @@ position: sticky;
   #overlay ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 0.7rem;
-    line-height: 0.2rem;
+    font-size: 1em;
+    line-height: 1em;
   }
   #overlay ul li a:hover {
     color: #000!important;
@@ -1528,7 +1560,7 @@ position: sticky;
   font-size: 2em;
 }
 
-
+}
     .inner{
 
       margin:5vw auto;
