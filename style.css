@@ -818,22 +818,7 @@ font-size: 16px
     
    
 }
-    a.border-radius {
-      width: 100px;
-      height: 100px;
-      line-height: 100px;
-      background-color: rgb(255, 255, 255);
-      border-radius: 50%;
-      color: #000000;
-      text-align: center;
-      font-size: 1.2rem;
-      font-weight: bold;
-      cursor: pointer;
-      border: 4px solid #000000;
-      position:fixed;	
-		bottom:50px;
-		right:50px;
-    }
+
     .side_link {
       position: fixed;
       right: 0;
@@ -1049,7 +1034,7 @@ position: sticky;
       }
       .div02 {
         grid-area: 1 / 2 / 2 / 3; 
-        font-size: 0.5em;
+        font-size: 1em;
     
          text-align: right;
         }
@@ -1069,7 +1054,7 @@ position: sticky;
           margin: 20px;
       }
         .message {
-          margin-left: 50px;
+          margin-left: 40px;
           color: #000;
         
           font-family: "sans-serif" ;
@@ -1079,7 +1064,7 @@ position: sticky;
         }
         .txt01 {
           animation-delay: 1s;
-          line-height: 3em;
+          line-height: 2.5em;
           font-size: 0.8em;
         }
     
@@ -1349,6 +1334,75 @@ position: sticky;
         font-size: 30px!important;
       }
 
+      .btn-viewmore a {
+        display: flex;
+        background-color: #fff;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5em 1em;
+        width: 100px;
+        color: #2285b1;
+        font-size: 1em;
+        font-weight: 700;
+        border-top: 2px solid #2285b1;
+        border-bottom: 2px solid #2285b1;
+          margin-left: auto;
+      margin-right:5%;
+      margin-top: 30px;
+      }
+      .btn-viewmore a::after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        border-top: 3px solid #2285b1;
+        border-right: 3px solid #2285b1;
+        transform: rotate(45deg);
+      }
+      .btn-viewmore a:hover {
+        color: #333333;
+        text-decoration: none;
+      }
+      .btn-viewmore a:hover::after {
+        border-top: 3px solid #333333;
+        border-right: 3px solid #333333;
+      }
+      .interview-btn-viewmore a {
+        display: flex;
+        background-color: #fff;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5em 1em;
+        width: 100px;
+        color: #2285b1;
+        font-size: 1em;
+        font-weight: 700;
+        border-top: 2px solid #2285b1;
+        border-bottom: 2px solid #2285b1;
+        margin-left: auto;
+      margin-right:50px;
+      margin-top: 2%;
+      }
+      
+      .interview-btn-viewmore a::after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        border-top: 3px solid #2285b1;
+        border-right: 3px solid #2285b1;
+        transform: rotate(45deg);
+      }
+      
+      .interview-btn-viewmore a:hover {
+        color: #333333;
+        text-decoration: none;
+    
+      }
+      
+      .interview-btn-viewmore a:hover::after {
+        border-top: 3px solid #333333;
+        border-right: 3px solid #333333;
+      }
+    }
   @keyframes bugfix {
     from {
       padding: 0;
