@@ -929,12 +929,8 @@ font-size: 16px
   left: -28%;
   top: 25%;
 }
-}
 
-.top-title h3{
-   position:relative;
 }
-
 @media screen and (max-width: 980px) {
 
 }
@@ -967,6 +963,19 @@ position: sticky;
   
   /*スマホまとめ**/
   @media screen and (max-width: 550px) {
+
+    .title h2 {
+      font-size: 2em;
+      overflow-wrap: anywhere;
+      flex-wrap: wrap;
+      font-weight: 700;
+      color: #4E9BFF;
+      margin-top: 30px;
+    }
+    .top-title h3{
+       position:relative;
+    }
+
       .top-view{
         display: flex;
         position: relative;
@@ -1052,11 +1061,11 @@ position: sticky;
           max-width: 180px;
           margin: 20px;
       }
-        .wrap_mes {
-          margin-left: 15vw;
+        .message {
+          margin-left: 50px;
           color: #000;
           line-height: 2em;
-          font-size: 0.8em;
+          font-size: 0.7em;
           font-family: "sans-serif" ;
           overflow-wrap: anywhere;
           flex-wrap: wrap;
@@ -1224,8 +1233,8 @@ position: sticky;
       transition: all 0.2s ease;
       z-index: 5;
       position:fixed;	
-    bottom:50px;
-    right:50px;
+    bottom:10px;
+    right:10px;
     }
     a.entry-button:hover {
       box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
@@ -1323,13 +1332,11 @@ position: sticky;
     
     /*---------- 矢印 ----------*/
     .slider .slick-next{
-        right:0px!important;
-        margin-right: 0.1vw!important;
-        margin-left: 0.1vw!important;
+        right:-35px!important;
     
     }
     .slider .slick-prev{
-        left:0px!important;
+        left:-50px!important;
         z-index: 1;
     
     }
@@ -1487,7 +1494,12 @@ position: sticky;
           .business-list li{
             align-self: baseline;
           }
-        
+        .business p{
+  display:flex;
+  color:#fff;
+  font-size: 2em;
+  text-align: left;
+}
           .btn-business-wrap{ flex-direction: column;width: 100%;}
           .btn-business{width: 100%;
           max-width: 240px;
