@@ -132,10 +132,10 @@ a.btn-top:hover{
   align-items: center;
 }
 .message { 
-  margin-left:30%;
+  margin-left:25%;
   color: #000;
-  line-height: 1.5em;
-  font-size: 1.5em;
+
+  font-size: 1em;
   font-family: "sans-serif" ;
   overflow-wrap: anywhere;
   flex-wrap: wrap;
@@ -265,7 +265,10 @@ a.btn-top:hover{
     100% {  opacity: 1;}
 }
 
-.txt01 {animation-delay: 1s;}
+.txt01 {
+  animation-delay: 1s;
+  line-height: 3em;
+}
 .txt02 {animation-delay: 2s;}
 .txt03 {animation-delay: 3s;}
 .txt04 {animation-delay: 4s;}
@@ -863,7 +866,7 @@ font-size: 16px
               align-items: center;
       font-weight: 700;
       line-height: 1;
-      font-size: 12px;
+      font-size: 13px;
       color: #fff;
     }
     
@@ -1063,15 +1066,18 @@ position: sticky;
         .message {
           margin-left: 40px;
           color: #000;
-          line-height: 1.5em;
-          font-size: 1em;
+        
           font-family: "sans-serif" ;
           overflow-wrap: anywhere;
           flex-wrap: wrap;
           margin-top: 20px;
           z-index: 2;
         }
-
+        .txt01 {
+          animation-delay: 1s;
+          line-height: 3em;
+          font-size: 0.5em;
+        }
     
     
     a.btn-top:after {
