@@ -53,7 +53,7 @@ p {
 }
 .top-title h1{
   writing-mode: vertical-rl;
-    font-size: 85px;
+    font-size: 80px;
     overflow-wrap: anywhere;
     z-index: 5;
     flex-wrap: wrap;
