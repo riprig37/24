@@ -1,0 +1,862 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+@media only screen and (max-width: 1126px) {
+#header-nav{
+	display:none;
+}
+#menu-btn{
+	display:block;
+}
+#menu{
+	display:none;
+}
+#sp-menu{
+	display: block;
+}
+
+}
+@media only screen and (max-width: 750px) {
+/*-----------------------------------------------------------
+		SNS
+-----------------------------------------------------------*/
+#sns{
+	width:100%;
+	margin:0 0;	
+	padding-top:60px;	
+}
+#sns h2{
+	margin:0 auto;
+	width:224px;
+	margin-bottom:30px;
+}
+#facebook{
+	float:none;
+	width:100%;
+}
+#facebook .facebook-box{
+	width:250px;
+	float:none;
+	margin:0 auto;
+	margin-bottom:60px;
+	text-align:center;
+}
+#twitter{
+	float:none;
+	width:100%;
+}
+#twitter .twitter-box{
+	width:250px;
+	float:none;
+	margin:0 auto;
+	margin-bottom:60px;
+	text-align:center;
+	margin-left: none;
+}
+
+#instagram{
+	float:none;
+	width:100%;
+}
+#instagram .instagram-box{
+	width:250px;
+	float:none;
+	margin:0 auto;
+	margin-bottom:60px;
+	text-align:center;
+}
+
+}
+@media only screen and (max-width: 1000px) {
+html {
+	overflow-y: scroll;
+	margin-bottom: 1px;/*Opera用*/
+}
+img {
+	border: 0;
+}
+.bita_movie{
+	width:100%;
+	margin-top:40px;
+}
+header, footer, nav, section, article, aside {
+	display:block;
+}
+/*
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}*/
+
+body{
+	min-width:inherit;
+	color: #333333;
+	font-size:16px;
+	text-align: left;
+	line-height:28px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	position: relative;
+}
+img{
+	width:100%;
+	height:auto;
+}
+.pc-only {
+	display:block;
+}
+.sp-only {
+	display:none;
+}
+
+/*-----------------------------------------------------------
+	リンクスタイル
+-----------------------------------------------------------*/
+a {
+	line-height: 1.6em;
+}
+a:link {
+	color: #699a51;
+	text-decoration: none;
+}
+a:visited {
+	color: #699a51;
+	text-decoration: none;
+}
+a:hover {
+	color: #699a51;
+	text-decoration: underline;
+}
+a:active {
+	color: #333333;
+	text-decoration: none;
+}
+a.ext_link {
+	background: url(../img/common/arrow.png) no-repeat left center;
+	background-size:14px 14px;
+	line-height:18px;
+	padding-left:20px;
+}
+
+
+/*-----------------------------------------------------------
+		内部
+-----------------------------------------------------------*/
+.inner{
+	width:90%;
+	margin:0 5%;
+}
+
+
+/*-----------------------------------------------------------
+		ヘッダー
+-----------------------------------------------------------*/
+#header{
+	width:100%;
+	height:40px;
+	position:fixed;
+	left:0;
+	top:0;
+	background-color:#fff;
+	z-index:9999;
+	border-bottom:solid 1px #eee;
+}
+/*-- ロゴ --*/
+#header-logo{
+	float:left;
+	width:160px;
+	height:auto;
+	margin-top:10px;
+	margin-left:5px;
+}
+/*-- グローバルナビゲーション --*/
+#header-nav{
+	display:none;
+	float:left;
+	list-style:none;
+
+}
+#header-nav li{
+	float:left;
+}
+
+#header-nav li a {
+	display:block;
+	line-height:40px;
+	width:120px;
+	text-align:center;
+}
+#header-nav li a:hover{
+	background-color:#eee;
+}
+#header-nav li a:link {
+	color:#333;
+	text-decoration: none;
+	font-weight:bold;
+	font-size:15px;
+}
+#header-nav li a:visited {
+	color:#333;
+}
+.komeri{
+	display:none;
+}
+.komerilogotxt{
+	display:none;
+}
+/*-- エントリーボタン --*/
+#header-entry{
+	float:right;
+}
+#header-entry a{
+	display:block;
+	width:90px;
+	line-height:40px;
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+	background-color:#0071EC;
+}
+#header-entry a:hover{
+	background-color:#39F;
+}
+#header-entry a:link {
+	text-decoration: none;
+}
+#header-entry a:visited {
+	color:#fff;
+}
+/*-- スマホメニューボタン --*/
+#menu-btn{
+	display:block;
+	float:right;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+	background-color:#039;
+	cursor:pointer;
+	background-image:url(../images/common/menu-btn.png);
+	background-repeat:no-repeat;
+	background-size:40px;
+}
+#header .active{
+	background-image:url(../images/common/menu-btn-close.png);
+	background-repeat:no-repeat;
+	background-size:40px;
+}
+#menu-btn a:hover{
+	background-color:#39F;
+}
+#menu-btn a:link {
+	text-decoration: none;
+}
+#menu-btn a:visited {
+	color:#fff;
+}
+
+
+/*-----------------------------------------------------------
+		スマホメニュー
+-----------------------------------------------------------*/
+#menu{
+	width:100%;
+	display:none;
+	position:fixed;
+	left:0;
+	top:40px;
+	z-index:9999;
+	background-color:#fff;
+}
+#sp-menu{
+	display: block;
+	border-top: solid 1px #eee;
+}
+#sp-menu li{
+	width: 100%;
+	float: left;
+	list-style: none;
+}
+#sp-menu li a{
+	display: block;
+	text-align: center;
+	text-decoration:none;
+	line-height: 64px;
+	font-size: 18px;
+	color: #333;
+	border-bottom: solid 1px #eee;
+	background-color:#fff;
+	background-image:url(../images/common/arrow_blue.png);
+	background-repeat:no-repeat;
+	background-size:20px;
+	background-position: left 10px center;
+}
+
+#sp-menu li:nth-child(2n){
+	border-left: solid 1px #eee;
+}
+
+#bg-image{
+	position:fixed;
+	z-index:-9999;
+}
+#bg-image img{
+	width:100%;
+	height:auto;
+}
+
+/*-----------------------------------------------------------
+		お知らせ
+-----------------------------------------------------------*/
+#info{
+	padding-bottom:30px;
+	overflow:hidden;
+}
+.info-ul{
+	width: 90%;
+	background-color:#fff;
+	margin:0 auto;
+	padding:20px 5% 20px;
+}
+
+.info-ul ul{
+	list-style: none;
+}
+.info-ul li{
+	/*border-bottom: dotted 1px #ccc;*/
+	overflow: hidden;
+}
+.info-ul li:first-child {
+	/*border-top: dotted 1px #ccc;*/
+}
+.info-ul li br{
+	display: none;
+}
+.info-ul .date{
+	float: left;
+	display: block;
+	clear: left;
+	width:7.0em;
+	font-size:12px;
+}
+.info-ul .badge{
+	float: left;
+	display: block;
+	width:7.0em;
+	color:#fff;
+	font-size:10px;
+	text-align:center;
+	background:#999;
+	border-radius: 10px;	/* CSS3草案 */  
+	-webkit-border-radius: 10px;	/* Safari,Google Chrome用 */  
+	-moz-border-radius: 10px;	/* Firefox用 */ 
+}
+.info-ul .col01{
+	background-color:#FF9D4A;
+}
+
+.info-ul .col02{
+	background-color:#67BF02;
+}
+
+.info-ul .col03{
+	background-color:#0071EC;
+}
+
+.info-ul .col04{
+
+	background:#FF69B4;
+}
+
+.info-ul .col05{
+	background:#fc3;
+}
+
+.info-ul .ttl{
+	float:none;
+	clear:left;
+	width:100%;
+	display: block;
+	padding-left:0;
+	margin-left:0;
+	height: auto;
+	font-size:12px;
+	text-align:justify;
+	border-bottom:solid 1px #ddd;
+	padding-bottom:10px;
+}
+.info-ul li a{
+	display: block;
+	width: 100%;
+	padding:10px 0 0;
+	overflow: hidden;
+}
+.info-ul li a:link{
+	color:#000;
+	text-decoration: none;
+}
+.info-ul li a:visited {
+	color:#000;
+	text-decoration: none;
+}
+.info-ul li a:hover{
+	background: #f6f6f6;
+	color: #000;
+}
+.info-ul li a:hover .ttl{
+	/*text-decoration: underline;*/
+}
+.info-ul li a:active {
+	color:#000;
+	text-decoration: none;
+}
+.info-backnumber a{
+	display:block;
+	background-color:#FF9D4A;
+	height:40px;
+	text-align:center;
+}
+.info-backnumber img{
+	width:140px;
+	margin:0 auto;
+	margin-top:12px;
+}
+
+
+
+#contents{
+	background-image:url(../images/bg03.jpg);
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-attachment:fixed;
+	background-size: 100% auto;
+}
+
+/*-----------------------------------------------------------
+		サブタイトル
+-----------------------------------------------------------*/
+
+    #subpage-title {
+	margin-top: 20px;
+	padding-bottom: 20px;
+	}
+	
+	#subpage-title .inner{
+	height: auto;
+	}
+	
+	#subpage-title .inner h1{
+	font-size: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+	margin-top: 25px;
+ 　 }
+/*-----------------------------------------------------------
+		サブページコンテンツ
+-----------------------------------------------------------*/
+
+	 /* レイアウト全体領域 */
+   .subpage-contents {
+      display: block;
+      width: 100%;
+	  font-size:0.8rem;
+   }
+   .subpage-contents h2{
+	   color: #0071EC;
+       font-size: 1.5rem;
+       font-weight: bold;
+       margin-bottom: 10px;
+	  }
+   .subpage-contents h3{
+	   color: #FF9D4A;
+       font-size: 1.2rem;
+       font-weight: bold;
+       margin-bottom: 5px;
+	  }
+   /* subpage-columnの装飾 */
+   .subpage-column {
+      display: block;
+	  font-size:0.8rem;
+   }
+   .subpage-column h2{
+	   color: #0071EC;
+       font-size: 1.5rem;
+       font-weight: bold;
+       margin-bottom: 10px;
+	  }
+   /* subpage-column2の装飾 */
+   .subpage-column2 {
+      display: block;
+      width: 100%;
+	  padding-left: 0;
+      padding-right: 0;
+   }
+   
+       .subpage-back {
+      display: block;
+      width: 100%;
+	  font-size: 0.9rem;
+   }
+    
+	.subpage-back .inner{
+    padding: 2% 0px 2%;
+	width: 100%;
+    margin: auto;
+	}
+  
+  .subpage-back .inner h2{
+	  color: #0071EC;
+       font-size: 1.5rem;
+       font-weight: bold;
+       margin-bottom: 10px;
+	  }
+	  
+   .subpage-back .inner h3{
+	   color: #fff;
+       font-size: 1.2rem;
+       font-weight: bold;
+       margin-bottom: 5px;
+	  }
+    /* 表のcss */
+   .table {
+	   font-size: 0.9rem;
+   }
+   /* 3カラム(スマホ時は2列)*/
+   .column3{
+	   width: calc(50% - 10px);
+       margin: 5px;
+}
+
+	/* 2カラム(スマホ時は1列)*/
+	.imgcolumn2{
+	    width: calc(100% - 10px);
+        margin: 5px;
+}
+   
+
+
+
+
+/*-----------------------------------------------------------
+		社員コース
+-----------------------------------------------------------*/
+#course{
+	width:100%;
+	height:auto;
+	padding:30px 0 0 0;
+	background-image:url(../images/bg02.jpg);
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+#course2{
+	padding:30px 0 0 0;
+}
+#course .course-bg{
+	display:block;
+	height:130px;
+	margin:0 auto;
+	background-image:url(../images/course-ttl2.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	position:relative;
+}
+#course2 .course-bg{
+	height:130px;
+	background-size:contain;
+}
+#course img{
+	width:90%;
+	margin:20px 5%;
+	position:inherit;
+	left:inherit;
+	top:inherit;
+}
+
+
+
+/*-----------------------------------------------------------
+		求人情報
+-----------------------------------------------------------*/
+#recr{
+}
+
+.h_recr{
+	position:relative;
+	width:100%;
+	height:44px;
+	overflow:hidden;
+}
+.h_recr img{
+	position:absolute;
+	top:0;
+	left:50%;
+	width:1000px;
+	margin-left:-500px;
+	height:44px;
+}
+.recr-box{
+	padding:30px 0;
+	background:#fff;	
+}
+.recr-menu{
+	overflow:hidden;
+}
+.recr-menu li{
+	float:left;
+	color:#fff;
+	width:48%;
+	height:60px;
+	font-size:14px;
+	text-align:center;
+	margin-left:4%;
+	margin-bottom:10px;
+}
+.recr-menu li:first-child{
+	margin-left:0;
+}
+.recr-menu li:nth-child(5){
+	margin-left:0;
+}
+.recr-menu li:nth-child(2n-1){
+	margin-left:0;
+}
+.recr-menu li a{
+	position:relative;
+	display:block;
+	width:100%;
+	height:60px;
+	background-color:#0071EC;
+	border-radius: 6px;	/* CSS3草案 */  
+	-webkit-border-radius:6px;	/* Safari,Google Chrome用 */  
+	-moz-border-radius: 6px;	/* Firefox用 */
+}
+.recr-menu li a span{
+	display:block;
+	width:100%;
+	position:absolute;
+	top:50%;
+	margin-top:-12px;
+}
+.recr-menu li a span.row2{
+	display:block;
+	position:absolute;
+	top:50%;
+	margin-top:-20px;
+}
+.recr-menu li a:link{
+	color:#fff;
+	text-decoration: none;
+}
+.recr-menu li a:visited {
+	color:#fff;
+	text-decoration: none;
+}
+.recr-menu li a:hover{
+	color:#fff;
+}
+
+
+
+/*-----------------------------------------------------------
+		会社情報
+-----------------------------------------------------------*/
+.company-info{
+	overflow:hidden;
+	margin-top:30px;
+}
+
+.company-info li{
+	float:left;
+	width:100%;
+	height:auto;
+	margin-left:0;
+	font-size:10px;
+	margin-bottom:20px;
+}
+.company-info li a{
+	display:block;
+	width:100%;
+	height:auto;
+	background-color:#fff;
+}
+.company-info li a:link{
+	color:#333;
+	text-decoration: none;
+}
+.company-info li a:visited {
+	color:#333;
+	text-decoration: none;
+}
+.company-info li a:hover{
+	color:#333;
+}
+.company-info li:first-child{
+	margin-left:0;
+}
+.company-info li span{
+	display:block;
+	text-align:center;
+	font-size:12px;
+	font-weight:bold;
+	margin:15px 0 0; 
+}
+.company-info li p{
+	padding:5px 14px 10px;
+}
+
+
+
+/*-----------------------------------------------------------
+		アイコン
+-----------------------------------------------------------*/
+#icon{
+	overflow:hidden;
+	margin-top:10px;
+	padding-bottom:20px;
+}
+
+.icon-menu{
+}
+.icon-menu li{
+	float:left;
+	color:#333;
+	width:48%;
+	height:auto;
+	font-size:10px;
+	text-align:center;
+	margin-left:4%;
+	margin-bottom:10px;
+}
+.icon-menu li:first-child{
+	margin-left:0;
+}
+.icon-menu li:nth-child(3n){
+	margin-left:0;
+}
+.icon-menu li br{
+	display:none;
+}
+.icon-menu li a{
+	display:block;
+	width:100%;
+	height:auto;
+	background-color:#fff;
+}
+.icon-menu li a:link{
+	color:#333;
+	text-decoration: none;
+}
+.icon-menu li a:visited {
+	color:#333;
+	text-decoration: none;
+}
+.icon-menu li a:hover{
+	color:#333;
+}
+.icon-menu li a img{
+	margin:0 20%;
+	margin-top:15px;
+	width:60%;
+}
+.icon-menu li a p{
+	padding:10px;
+	text-align:left;
+	text-align:justify;
+}
+
+
+
+/*-----------------------------------------------------------
+		フッター
+-----------------------------------------------------------*/
+#footer{
+	text-align:center;	
+}
+
+#footer-logo img{
+	width:100px;
+	margin:10px 0;
+}
+#footer-nav{
+	position:relative;
+}
+#footer-nav ul{
+	position:inherit;
+	left:0;
+	margin-left:0;
+}
+#footer-nav li{
+	float:none;
+	margin:0;
+	text-align:left;
+	background-color:#0071EC;
+	border-bottom: solid 1px #fff;
+	font-size:14px;
+	background-image:url(../images/common/arrow.png);
+	background-repeat:no-repeat;
+	background-size:10px;
+	background-position:left 5px center;
+}
+#footer-nav li a{
+	display:block;
+	width:86%;
+	color:#fff;
+	padding:5px 7%;
+}
+#footer-nav li a:link{
+	color:#fff;
+	text-decoration: none;
+}
+#footer-nav li a:visited {
+	color:#fff;
+	text-decoration: none;
+}
+#footer-nav li a:hover{
+	color:#fff;
+}
+/*-- コピーライト --*/
+#copyright{
+	margin-top:0;
+	margin-bottom:0;
+	padding:20px 10px;
+	font-size:10px;
+	background-color:#ddd;
+}
+
+
+}
+@media only screen and (max-width: 320px) {
+/*-- エントリーボタン --*/
+#header-entry{
+	display:none;
+}
+/*-- スマホメニューボタン --*/
+#menu-btn{
+	/*display:none;*/
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
