@@ -707,9 +707,10 @@ font-size: 16px
 }
 #icon{
 	overflow:hidden;
-	margin-top:20px;
+	margin-top:60px;
 }
 .icon-menu{
+  margin-top:20px;
 }
 .icon-menu li{
 	float:left;
