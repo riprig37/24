@@ -1770,7 +1770,49 @@ border-right: 5px solid #777777;
 /*-----------------------------------------------------------
 		サブページコンテンツ
 -----------------------------------------------------------*/
+.fluid-block {
+  position: absolute;
+  background-image: url(images/title_left.png);
+  z-index: -10;
+  width: 150%;
+  height: 300px;
+  left: -518px;
+  top: 52px;
+  background-repeat: no-repeat;
+}
+.fluid-block2 {
+  position: absolute;
+  background-image: url(images/title_right.png);
+  z-index: -10;
+  width: 150%;
+  height: 1200px;
+  right: -110%;
+  top: -799px;
+  background-repeat: no-repeat;
+}
 
+@media only screen and (max-width: 767px) {
+  .fluid-block {
+    position: absolute;
+    background-image: url(images/title_left.png);
+    z-index: -10;
+    width: 150%;
+    height: 300px;
+    left: -518px;
+    top: 52px;
+    background-repeat: no-repeat;
+}
+.fluid-block2 {
+  position: absolute;
+  background-image: url(images/title_right.png);
+  z-index: -10;
+  width: 150%;
+  height: 1200px;
+  right: -110%;
+  top: -799px;
+  background-repeat: no-repeat;
+}
+}
 	 /* レイアウト全体領域 */
    .subpage-contents {
      /* display: table; */
