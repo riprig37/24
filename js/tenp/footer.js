@@ -5,7 +5,7 @@ var html = "";
 html += '<div id="footer">';
 
 html += '<!----- フッターロゴ ----->';
-html += '<div id="footer-logo"><a href="/"><img src="images/footer-logo.png" alt="ビット・エイ" width="158" height="56"></a></div>';
+html += '<div id="footer-logo"><a href="/"><img src="../images/footer-logo.png" alt="ビット・エイ" width="158" height="56"></a></div>';
 
 
 html += '<!----- フッターナビゲーション ----->';
@@ -19,7 +19,7 @@ html += '<li><a href="//www.bit.or.jp/bita_recruit/contents/environment.html">�
 html += '</ul>';
 html += '</div><!--/footer-nav-->';
 
-html += '<div id="copyright">Copyright&copy;Bit-A Co.,Ltd. All rights reserved.</div>';
+html += '<div id="copyright"><script type="text/javascript" src="../js/copyright.js"></script></div>';
 html += '</div><!--/footer-->';
 
 
