@@ -1772,7 +1772,7 @@ border-right: 5px solid #777777;
 -----------------------------------------------------------*/
 .fluid-block {
   position: absolute;
-  background-image: url(images/title_left.png);
+  background-image: url(../images/title_left.png);
   z-index: -10;
   width: 150%;
   height: 300px;
@@ -1782,7 +1782,7 @@ border-right: 5px solid #777777;
 }
 .fluid-block2 {
   position: absolute;
-  background-image: url(images/title_right.png);
+  background-image: url(../images/title_right.png);
   z-index: -10;
   width: 150%;
   height: 1200px;
@@ -1794,7 +1794,7 @@ border-right: 5px solid #777777;
 @media only screen and (max-width: 767px) {
   .fluid-block {
     position: absolute;
-    background-image: url(images/title_left.png);
+    background-image: url(../images/title_left.png);
     z-index: -10;
     width: 150%;
     height: 300px;
@@ -1804,7 +1804,7 @@ border-right: 5px solid #777777;
 }
 .fluid-block2 {
   position: absolute;
-  background-image: url(images/title_right.png);
+  background-image: url(../images/title_right.png);
   z-index: -10;
   width: 150%;
   height: 1200px;
