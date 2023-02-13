@@ -61,8 +61,21 @@ p {
     line-height: 300%;
     letter-spacing: 0.1em
 }
-h1::first-letter{
+.top-title h1::first-letter{
   font-size: 1.5em;
+}
+@media screen and (max-width: 1100px) {
+  .top-title h1{
+    writing-mode: vertical-rl;
+      font-size: 60px;
+      line-height: 1.3;
+      overflow-wrap: anywhere;
+      z-index: 5;
+      flex-wrap: wrap;
+      font-weight: 900;
+      line-height: 260%;
+      letter-spacing: 0.1em
+  }
 }
 .top-title h3 {
   margin: 20px 0 30px 0;
@@ -135,7 +148,7 @@ a.btn-top:hover{
   margin-left:25%;
   color: #000;
 
-  font-size: 1em;
+  font-size: 1.5em;
   font-family: "sans-serif" ;
   overflow-wrap: anywhere;
   flex-wrap: wrap;
@@ -242,16 +255,7 @@ animation-direction:normal;/*7で解説*/
     animation-direction:normal;/*7で解説*/
       }
   
-  #overlay {
-    width: 100vw;
-    background: #4E9BFF;
-    z-index: 2;
-    visibility: hidden;
-    position: fixed;
-    margin-top: 550px;
 
-    
-}
 
 /*1で解説*/
 @keyframes sha{
@@ -259,22 +263,36 @@ animation-direction:normal;/*7で解説*/
     opacity: 0;
   }
 }
+#overlay {
+  width: 100vw;
+  height: 110vh;
+  background: #4E9BFF;
+  z-index: 2;
+  visibility: hidden;
+  position: fixed;
+  margin-top: -90px;
+  color: #fff!important;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
   #overlay ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    height: 200vh;
     padding-left: 0;
     list-style-type: none;
     transition: transform 1s linear 0s;
+    color: #fff!important;
+    margin-top: 110px;
   }
   #overlay ul li {
     padding: 1em;
   }
   #overlay ul li a {
-    color: #fff;
+    color: #fff!important;
     text-decoration: none;
     font-size: 1rem;
   }
@@ -287,7 +305,7 @@ animation-direction:normal;/*7で解説*/
     }
     .sns{
     gap: 5px;
-    top: 60%;
+    top: 65%;
     right:30px;
     display: none;
     }
@@ -350,7 +368,6 @@ a.entry-button:focus {
 }
 .navigation{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
@@ -372,7 +389,7 @@ a.entry-button:focus {
 .sns{
   display:flex;
   position: absolute;
-  gap: 15px;
+  gap: 20px;
   right:80px;
   top: 35px;
   z-index:999;
@@ -380,7 +397,7 @@ a.entry-button:focus {
   }
   
 .sns img{
-max-width:30px;
+max-width:35px;
 align-items: center;
   }
 .sns a{
@@ -392,9 +409,7 @@ padding:2px;
  transition: 0.3s ;
  }
 @media screen and (max-width: 980px) {
-.sns img{
-max-width:30px;
-}
+
 .sns{
 gap: 5px;
 top: 60%;
@@ -692,7 +707,7 @@ font-size: 16px
 }
 #icon{
 	overflow:hidden;
-	margin-top:70px;
+	margin-top:20px;
 }
 .icon-menu{
 }
@@ -704,7 +719,6 @@ font-size: 16px
 	font-size:12px;
 	text-align:center;
 	margin-left:32px;
-	margin-bottom:70px;
 }
 .icon-menu li:first-child{
 	margin-left:0;
@@ -801,6 +815,60 @@ font-size: 16px
 	background-color:#fc3;
 	margin-top: 30px;
 }
+#footer-logo img {
+  margin: 20px 0;
+}
+#footer-nav li a:link {
+  color: #333;
+  text-decoration: none;
+}
+#footer-nav li {
+  margin: 0 2em;
+}
+#footer-nav li a {
+  color: #333;
+}
+
+#copyright {
+  color: #333;
+  text-align:center;	
+	margin: 20px auto;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 541px){
+#footer-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+}
+@media only screen and (max-width: 540px){
+#footer-nav ul {
+    position: inherit;
+    left: 0;
+    margin-left: 0;
+}
+#footer-nav li {
+  float: none;
+  margin: 0;
+  text-align: center;
+  background-color: #fc3;
+  /* border-bottom: solid 1px #fff; */
+  font-size: 14px;
+  /* background-image: url(../images/common/arrow.png); */
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: left 5px center;
+}
+}
+
+
   @media screen and (max-width: 550px) {
     .business {
       display: flex;
@@ -1022,6 +1090,8 @@ position: sticky;
         line-height: 260%;
         letter-spacing: 0.1em
     }
+
+  
     .top-title h3{
       margin: 20px 10px 20px 0;
         font-size: 1rem;
@@ -1087,7 +1157,7 @@ position: sticky;
         .message {
           margin-left: 30px;
           color: #000;
-        
+          font-size: 1em;
           font-family: "sans-serif" ;
           overflow-wrap: anywhere;
           flex-wrap: wrap;
@@ -1163,6 +1233,7 @@ position: sticky;
     overflow:hidden;
     margin-top:10px;
     padding: 0 3rem;
+        display: flex
   }
   
   .icon-menu{
@@ -1214,13 +1285,25 @@ position: sticky;
   }
   #overlay {
     width: 100vw;
+    height: 100vh;
     background: #4E9BFF;
     z-index: 2;
     visibility: hidden;
     position: fixed;
-    margin-top: 430px;
     
   }
+
+  #overlay ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+    list-style-type: none;
+    margin: 100px auto;
+  }
+
   #overlay ul li a {
     color: #fff;
     text-decoration: none;
@@ -1514,16 +1597,7 @@ position: sticky;
   
   
   }
-  #overlay ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding-left: 0;
-    list-style-type: none;
-    margin: -10em auto;
-  }
+
   #overlay ul li {
     padding: 0.5em!important;
   }
@@ -1543,11 +1617,7 @@ position: sticky;
     max-width:25px;
     margin: 10px 10px;
     }
-    .sns{
-    gap: 5px;
-    top: 60%;
-    display: none;
-    }
+
 .interview {
   flex-wrap: wrap;
   margin:0 auto;
@@ -1571,11 +1641,20 @@ position: sticky;
 #icon {
     overflow: hidden;
     margin-top: 10px;
-    padding-bottom: 20px;
 }
 .inner{
-  width:100%;
-  margin:5vw auto;
+	margin:0 auto;
+}
+.inner1000{
+	margin:5vw auto;
+  text-align : center
+}
+.inner1000 img {
+border-bottom: 5px solid #777777;
+border-right: 5px solid #777777;
+}
+.inner1000 a:hover{
+  opacity: .7;
 }
 }
         @media screen and (max-width: 550px) {
@@ -1599,3 +1678,274 @@ position: sticky;
             width: 100%;
           }
         }
+
+/*-----------------------------------------------------------
+	サブページ
+-----------------------------------------------------------*/
+
+.sub-heading {
+  font-size: 20px;
+  color: #5e5e5e;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 5px;
+  padding: 0;
+}
+
+
+/*-----------------------------------------------------------
+		内部
+-----------------------------------------------------------*/
+.inner{
+	width:800px;
+	margin:0 auto;
+}
+
+/*-----------------------------------------------------------
+		ヘッダー
+-----------------------------------------------------------*/
+
+/*-- ロゴ --*/
+/*-- グローバルナビゲーション --*/
+
+
+/*-----------------------------------------------------------
+	スマホメニュー
+-----------------------------------------------------------
+#menu{
+	width:100%;
+	display: block;
+	position:fixed;
+	left:0;
+	top:60px;
+	z-index:9999;
+}*/
+/*#sp-menu{
+	display: none;
+	border-top: solid 1px #eee;
+}*/
+
+/*#sp-menu li:nth-child(2n){
+	border-left: solid 1px #eee;
+}*/
+
+/*-----------------------------------------------------------
+		お知らせ
+-----------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+		サブタイトル
+-----------------------------------------------------------*/
+
+    #subpage-title {
+    color: #ffffffeb;
+   /* background-image: url(../images/subbg01.jpg);*/
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+	object-position: 0 100%;
+	background-repeat: no-repeat;
+	}
+	
+	#subpage-title .inner{
+    /*background: rgba(2,119,189,0.5);*/
+    padding: 5% 0 0;
+	width: 100%;
+    margin: auto;
+	height: 170px;
+	}
+	
+	#subpage-title .inner h1{
+	font-size: 3.2rem;
+     color: #118efd;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+	margin-top: 37px;
+	letter-spacing: 3px;
+	/*text-shadow: 1px 1px 20px #444;*/
+	border-bottom: 1.5px solid #636363;
+  }
+/*-----------------------------------------------------------
+		サブページコンテンツ
+-----------------------------------------------------------*/
+
+	 /* レイアウト全体領域 */
+   .subpage-contents {
+     /* display: table; */
+      width: 100%;
+      max-width: 1000px;
+      padding-top: 30px;
+      margin: 0 auto;
+	  font-size:1rem;
+   }
+   .subpage-contents h2{
+	   color: #000;
+       font-size: 2rem;
+       font-weight: bold;
+       margin-bottom: 10px;
+	   text-align: center;
+	   margin-top: 60px
+	  }
+   .subpage-contents h3{
+	   color: #039;
+       font-size: 1.5rem;
+       font-weight: bold;
+       margin-bottom: 10px;
+	  }
+ 
+   /* subpage-columnの装飾 */
+   hr.bita-bar {
+    width: 60px;
+    height: 4px;
+    background-color: #039;
+    border: 0;
+    outline: 0;
+    margin-top: 16px;
+    margin-bottom: 25px;
+    position: relative;
+}
+@media (min-width: 768px){
+hr.bita-bar {
+    width: 100px;
+    height: 5px;
+    margin-top: 40px;
+	} }
+   /* subpage-column2の装飾 */
+   /* サブページ背景ありの装飾 */
+   
+   /* 表のcss */
+	/* 3カラム*/
+	/* 2カラム*/
+
+/*-----------------------------------------------------------
+		採用情報表示・非表示ボタン
+-----------------------------------------------------------*/
+/*全体*/
+
+/*ボタン装飾*/
+
+/*ボタンホバー時*/
+
+/*チェックは見えなくする*/
+
+/*中身を非表示にしておく*/
+
+/*クリックで中身表示*/
+/*-----------------------------------------------------------
+		社員紹介
+-----------------------------------------------------------*/
+
+
+
+
+/*新人紹介*/
+ /* subpage-columnの装飾 */
+/* subpage-column2の装飾 */
+
+@media screen and (max-width: 768px) {
+ /* subpage-columnの装飾 */
+/* subpage-column2の装飾 */
+}
+
+
+/*インタビュー動画紹介*/
+ /* subpage-columnの装飾 */
+/* subpage-column2の装飾 */
+
+@media screen and (max-width: 768px) {
+ /* subpage-columnの装飾 */
+/* subpage-column2の装飾 */
+}
+
+/*-----------------------------------------------------------
+		PROJECTSTORY表示・非表示ボタン
+-----------------------------------------------------------*/
+
+/*全体*/
+
+/*ボタン装飾*/
+
+/*ボタンホバー時*/
+
+/*チェックは見えなくする*/
+
+/*中身を非表示にしておく*/
+
+/*クリックで中身表示*/
+@media screen and (max-width: 768px) {
+/*タブレット、スマホの場合*/
+}
+/*-----------------------------------------------------------
+		PROJECTSTORYページ 2カラムレイアウト
+-----------------------------------------------------------*/
+ /*-----------------------------------------------------------
+		PROJECTSTORYページ 2カラムレイアウト　スマホ　767px以下
+-----------------------------------------------------------*/
+/*-----------------------------------------------------------
+		SNS
+-----------------------------------------------------------*/
+/*#sns h2{
+	margin:0 auto;
+	width:224px;
+	margin-bottom:30px;
+	text-align: center
+}*/
+
+/*-----------------------------------------------------------
+		社員コース/PROJECT STORY
+-----------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------
+		求人情報
+-----------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------
+		会社情報
+-----------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------
+		アイコン
+-----------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------
+		リニューアル追記ｃｓｓ
+-----------------------------------------------------------*/
+.mb40{
+	margin-bottom: 	40px !important
+}
+/*-----------------------------------------------------------
+		お知らせ
+-----------------------------------------------------------*/
+/*-----------------------------------------------------------
+		フッター
+-----------------------------------------------------------*/
+#footer{
+	text-align:center;	
+	background-color:#fc3;
+	margin-top: 60px;
+}
+/*#footer-nav{
+	position:relative;
+}
+#footer-nav ul{
+	position:absolute;
+	left:50%;
+	margin-left:-26.0em;
+}
+#footer-nav li{
+	float:left;
+	margin:0 2.0em;
+}*/
+/*-- コピーライト --*/
+
+/*-- トップページメイン画像 --*/
+
+
+

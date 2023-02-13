@@ -6,7 +6,7 @@
 	<meta content="ビット・エイ23卒,24卒採用サイトです！SE、WEBデザイナー、DTPデザイナー、経理、人事、総務、大学院生も大募集！皆様の就職に対する不安を少しでも解消し、弊社をご理解いただき、企業研究にお役立ください。多くの皆様とお会いできることを楽しみにしております。" name="description">
 	<meta content="24卒,2024年卒業,23卒,2023年卒業,大学院,新潟,東京,採用,新卒,求人,デザイン,デザイナー,システム開発,システムエンジニア,DTP,WEB,SE,採用,就活,リクルート" name="keywords">
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
-	<link href="style.css" rel="stylesheet" type="text/css"><!--google fonts-->
+	<link href="style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/" rel="preconnect">
 	<link href="https://fonts.gstatic.com/" rel="preconnect">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&amp;family=Noto+Serif+JP:wght@500&amp;display=swap" rel="stylesheet"><!-- OGP設定 -->
@@ -34,6 +34,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://kit.fontawesome.com/27593dd9b8.js" crossorigin="anonymous"></script>
 <!-- Google tag (gtag.js) -->
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XSRQQ27HZL">
@@ -126,18 +127,17 @@
 
 
 	</script>
-</head><!-- Google for jobs -->
-<!-- Google for jobs -->
+</head>
 <body>
-		<header id="header"><a href="#">
+<!--topsub common-->
+		<header id="header"><a href="index.html">
 		<img alt="株式会社ビット・エイ採用サイト" class="rectuit-logo" src="images/logo.png"> </a>
-
 			<div class="navigation" id="fixed-header">
 <input type="checkbox" id="overlay-input" />
 <label for="overlay-input" id="overlay-button"><span></span></label>
   <div id="overlay">
     <ul>
-      <li><a href="#">株式会社ビット・エイ　採用サイト</a></li>
+      <li><a href="index.html">株式会社ビット・エイ　採用サイト</a></li>
       <li><a href="contents/about.html">会社概要</a></li>
       <li><a href="contents/works.html">事業内容</a></li>
             <li><a href="contents/recruit.html">採用情報</a></li>
@@ -155,7 +155,7 @@
 	<div class="sns">
 		<a href="https://twitter.com/bit_recruit" target="_blank"><img alt="Twitter" src="images/twitter.png"></a> <a href="https://www.instagram.com/bit_recruit/" target="_blank"><img alt="Instagram" src="images/instagram.png"></a> <a href="https://www.facebook.com/bit.jp/" target="_blank"><img alt="Facebook" src="images/facebook.png"></a> <a href="https://www.youtube.com/@bitaweb" target="_blank"><!--申請承認してからimg alt="YouTube" src="images/youtube.png"--></a>
 	</div>
-
+<!--commonここまで-->
 	<main>
 		<section class="top-view">
 			<div class="top-title">
@@ -340,7 +340,11 @@ width: auto;
 }
 </style>
 <a href="contents/course.html" target="_blank">
-	<img src="images/course-ttl2.png" >
+<picture>
+  <source srcset="images/course-ttl2s.jpg" media="(max-width: 550px)">
+  <img src="images/course-ttl2.png">
+</picture>
+
 	</a>
 </div>
 
@@ -372,7 +376,10 @@ width: auto;
 
 				<div class="inner1000">	
 <a href="https://www.bit.or.jp/bita_recruit/22_shinzin/index.html" target="_blank">
-	<img src="images/22_shinzin_02.jpg" alt="NEWCOMER">
+<picture>
+  <source srcset="images/22_shinzin_02s.jpg" media="(max-width: 550px)">
+  <img src="images/22_shinzin_02.jpg">
+</picture>
 	</a>
 </div>
 
@@ -460,8 +467,8 @@ TEL:03-6811-6217<br>FAX:03-6811-7728</p></a></li>
 
 	<ul class="side_link">
 		<li>
-			<a href="/bita_recruit/images/pamphlet.pdf" target="_blank" >
-				<p class="tb_none">パンフレットはこちら&#x1f4d6;</p>
+			<a href="images/pamphlet.pdf" target="_blank" >
+				<p class="tb_none">パンフレットはこちら<i class="fa-solid fa-book"></i></p>
 			</a>
 		</li>
 
