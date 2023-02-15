@@ -666,6 +666,7 @@ align-items: center;
     max-width: 1000px;
      
 }
+
 .company-info {
    display: flex;
     -webkit-flex-wrap: wrap;
@@ -1082,7 +1083,7 @@ position: sticky;
       flex-wrap: wrap;
       font-weight: 700;
       color: #4E9BFF;
-      margin-top: 30px;
+      margin-top: 50px;
     }
     
 
@@ -1200,9 +1201,24 @@ position: sticky;
     }
     
     #gaiyo{
-      margin-top: 10px;
+      width: 80%;
+      margin-top: 60px;
       padding: 0 3rem;
     }
+
+    
+    .inner1000{
+      width: 80%;
+    box-sizing: border-box;
+    margin: 20px 10%;
+    }
+    .inner1000 img {
+      width: 100%;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+    }
+
+
   .company-info{
     overflow:hidden;
     
@@ -1218,7 +1234,7 @@ position: sticky;
   }
   .company-info li a{
     display:block;
-    width:80%;
+    width:100%;
     height:auto;
     background-color:#fff;
   }
@@ -1647,6 +1663,7 @@ color: #FFF!important;
   margin:0 auto;
   width: 100vw;
   background-color: #4E9BFF;
+  padding-bottom: 10px;
 
 }
 .interview-wrap {
