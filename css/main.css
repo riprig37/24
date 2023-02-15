@@ -1,7 +1,9 @@
 ﻿@charset "utf-8";
 /* CSS Document */
 
-
+.staff_img{
+	margin-top:30px;
+}
 
 .pc-only {
 	display:block;
