@@ -87,11 +87,25 @@ width:80px;
 bottom:90px!important;
 left:0!important;
 }
+/*ipad*/
 _::-webkit-full-page-media,
 _:future,
-:root .top-title01 {
+:root 
+@media screen and (max-width: 1100px) {
+  .top-title01 {
   right: 80px;
 }
+}
+/*iphone*/
+_::-webkit-full-page-media,
+_:future,
+:root 
+@media screen and (max-width: 550px) {
+  .top-title01 {
+  right: 120px;
+}
+}
+
 @media screen and (max-width: 1100px) {
   .top-title01 {
     margin: 0 0 0 0;
@@ -311,42 +325,42 @@ a.btn-top:hover{
   
   input[type=checkbox]:checked ~ #overlay {
     visibility: visible; 
-    animation-name: sha;/*1で解説*/
-animation-fill-mode:forwards;/*2で解説*/
-animation-duration:0.5s;/*3で解説*/
-animation-iteration-count:1;/*4で解説*/
-animation-timing-function:ease;/*5で解説*/
-animation-direction:normal;/*7で解説*/
+    animation-name: sha;
+animation-fill-mode:forwards;
+animation-duration:0.5s;
+animation-iteration-count:1;
+animation-timing-function:ease;
+animation-direction:normal;
   }
   
   input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
     background: transparent;
-    animation-fill-mode:forwards;/*2で解説*/
-animation-duration:0.5s;/*3で解説*/
-animation-iteration-count:1;/*4で解説*/
-animation-timing-function:ease;/*5で解説*/
-animation-direction:normal;/*7で解説*/
+    animation-fill-mode:forwards;
+animation-duration:0.5s;
+animation-iteration-count:1;
+animation-timing-function:ease;
+animation-direction:normal;
   }
     
   
   input[type=checkbox]:checked ~ #overlay-button span:before {
     transform: rotate(45deg) translate(7px, 5px);
-    animation-fill-mode:forwards;/*2で解説*/
-    animation-duration:0.5s;/*3で解説*/
-    animation-iteration-count:1;/*4で解説*/
-    animation-timing-function:ease;/*5で解説*/
-    animation-direction:normal;/*7で解説*/
+    animation-fill-mode:forwards;
+    animation-duration:0.5s;
+    animation-iteration-count:1;
+    animation-timing-function:ease;
+    animation-direction:normal;
       }
   
   input[type=checkbox]:checked ~ #overlay-button span:after {
     transform: rotate(-45deg) translate(7px, -5px);
   
   
-    animation-fill-mode:forwards;/*2で解説*/
-    animation-duration:0.5s;/*3で解説*/
-    animation-iteration-count:1;/*4で解説*/
-    animation-timing-function:ease;/*5で解説*/
-    animation-direction:normal;/*7で解説*/
+    animation-fill-mode:forwards;
+    animation-duration:0.5s;
+    animation-iteration-count:1;
+    animation-timing-function:ease;
+    animation-direction:normal;
       }
 
       input[type=checkbox]#overlay-input{
