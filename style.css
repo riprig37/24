@@ -47,6 +47,8 @@ a {
   margin: 20px 0 0 0;
   z-index: 5;
   writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -87,7 +89,7 @@ width:80px;
 bottom:90px!important;
 left:0!important;
 }
-/*ipad*/
+/*ipad
 _::-webkit-full-page-media,
 _:future,
 :root 
@@ -96,7 +98,7 @@ _:future,
   right: 80px;
 }
 }
-/*iphone*/
+iphone
 _::-webkit-full-page-media,
 _:future,
 :root 
@@ -104,10 +106,10 @@ _:future,
   .top-title01 {
   right: 30px;
 }
-}
+}*/
 /*_:lang(x)+_:-webkit-full-screen-document, 
-  top-title01 {
-    right: -5vw;
+  .top-title01 {
+    right: -5%
 }*/
 
 @media screen and (max-width: 1100px) {
