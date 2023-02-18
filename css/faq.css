@@ -5,7 +5,7 @@
 	greencapital
 -----------------------------------------------------------*/
 h1{
-	background-image:url(../img/h-bg.jpg);
+	background-image:url(../img/h-bg.html);
 }
 
 .inner{
@@ -141,7 +141,7 @@ section .three-columns li p {
 .content-visual{
 	width:100%;
 	padding:60px 0;
-	background-image:url(img/content-visual.jpg);
+	background-image:url(img/content-visual.html);
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position: center center;
