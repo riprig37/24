@@ -87,7 +87,7 @@ width:80px;
 bottom:90px!important;
 left:0!important;
 }
-/*ipad*/
+/*ipad
 _::-webkit-full-page-media,
 _:future,
 :root 
@@ -96,7 +96,7 @@ _:future,
   right: 80px;
 }
 }
-/*iphone*/
+/*iphone
 _::-webkit-full-page-media,
 _:future,
 :root 
@@ -104,6 +104,10 @@ _:future,
   .top-title01 {
   right: 0px;
 }
+}*/
+_:lang(x)+_:-webkit-full-screen-document, 
+  top-title01 {
+    right: 5%;
 }
 
 @media screen and (max-width: 1100px) {
