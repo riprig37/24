@@ -42,11 +42,15 @@ a {
   /*display: flex;*/
   margin: 0 auto;
   width: fit-content;
+  text-align: center;
 }
 .top-title01 {
-  margin: 20px 0 0 0;
+  margin: -40px 0 0 0;
   z-index: 5;
-  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl; 
+-moz-writing-mode: vertical-rl; 
+-ms-writing-mode: vertical-rl; 
+writing-mode: vertical-rl;
   position: relative;
   display: inline-block;
   vertical-align: middle;
