@@ -106,7 +106,7 @@ _:future,
   _::-webkit-full-page-media,
 _:future,
 :root .top-title01 {
-  left: -40px;
+  left: 23%
 }
 
 
@@ -894,7 +894,7 @@ border-right: 2px solid #000000;
   width: 70vw;
   z-index: -1;
   left: -25%;
-  top: 7%;
+  top: 4%;
 }
 .pink-svg1{
   position: absolute;
@@ -1221,7 +1221,7 @@ position: sticky;
     _::-webkit-full-page-media,
     _:future,
     :root .top-title01 {
-      left: -5%;
+      left: 23%;
     }
     .top-title02 {
       margin: 10px 0 0 0;
