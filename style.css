@@ -106,7 +106,7 @@ _:future,
   _::-webkit-full-page-media,
 _:future,
 :root .top-title01 {
-  left: 3%
+  left: 0%
 }
 
 
@@ -1221,7 +1221,7 @@ position: sticky;
     _::-webkit-full-page-media,
     _:future,
     :root .top-title01 {
-      left: -3%;
+      left: 0%;
     }
     .top-title02 {
       margin: 10px 0 0 0;
