@@ -40,8 +40,6 @@ a {
 }
 .top-view {
   /*display: flex;*/
-  margin: 0 auto;
-  width: fit-content;
   text-align: center;
 }
 .top-title01 {
@@ -53,7 +51,6 @@ a {
 writing-mode: vertical-rl;
   position: relative;
   display: inline-block;
-  vertical-align: middle;
 }
 .top-title01 h1{
   
@@ -106,7 +103,6 @@ _:future,
   writing-mode: vertical-rl;
     position: relative;
     display: inline-block;
-    vertical-align: middle;
   }
   _::-webkit-full-page-media,
 _:future,
@@ -1197,11 +1193,9 @@ position: sticky;
     .top-view {
       /*display: flex;*/
       margin: 0 auto;
-      width: fit-content;
     }
 
     .top-title01{
-        margin: 0 0 0 4%;
         z-index:5;
     -webkit-writing-mode: vertical-rl; 
   -moz-writing-mode: vertical-rl; 
@@ -1209,7 +1203,6 @@ position: sticky;
   writing-mode: vertical-rl;
     position: relative;
     display: inline-block;
-    vertical-align: middle;
       }
    
     
@@ -1220,7 +1213,7 @@ position: sticky;
         font-size: 40px;
         font-weight: 900;
         line-height: 260%;
-        letter-spacing: 0.1em
+        letter-spacing: 0.1em;
     }
     .top-title01 h1::first-letter{
       font-size: 1.5em;
@@ -1229,7 +1222,7 @@ position: sticky;
     _::-webkit-full-page-media,
     _:future,
     :root .top-title01 {
-      left: -80px;
+      left: 10%;
     }
     .top-title02 {
       margin: 10px 0 0 0;
