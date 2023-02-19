@@ -91,7 +91,7 @@ left:0!important;
 _::-webkit-full-page-media,
 _:future,
 :root .top-title01 {
-  right: 80px;
+  right: 8%;
 }
 @media screen and (max-width: 1100px) {
   .top-title01 {
@@ -106,7 +106,7 @@ _:future,
   _::-webkit-full-page-media,
 _:future,
 :root .top-title01 {
-  left: -3%
+  left: -4%
 }
 
 
