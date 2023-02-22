@@ -370,7 +370,7 @@ animation-direction:normal;/*7で解説*/
   width: 100vw;
   height: 110vh;
   background: #4E9BFF;
-  z-index: 10;
+  z-index: 2;
   visibility: hidden;
   position: fixed;
   margin-top: -90px;
@@ -1430,7 +1430,7 @@ position: sticky;
     width: 100vw;
     height: 150vh;
     background: #4E9BFF;
-    z-index: 30;
+    z-index: 2;
     visibility: hidden;
     position: fixed;
     
