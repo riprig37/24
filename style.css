@@ -45,12 +45,12 @@ a {
 .top-title01 {
   margin: -40px 0 0 0;
   z-index: 5;
- /* -webkit-writing-mode: vertical-rl; 
--moz-writing-mode: vertical-rl; */
+-webkit-writing-mode: vertical-rl; 
+-moz-writing-mode: vertical-rl; 
 -ms-writing-mode: vertical-rl; 
 writing-mode: vertical-rl;
   position: relative;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 .top-title01 h1{
   
