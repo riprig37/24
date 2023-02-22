@@ -45,8 +45,8 @@ a {
 .top-title01 {
   margin: -40px 0 0 0;
   z-index: 5;
-  -webkit-writing-mode: vertical-rl; 
--moz-writing-mode: vertical-rl; 
+ /* -webkit-writing-mode: vertical-rl; 
+-moz-writing-mode: vertical-rl; */
 -ms-writing-mode: vertical-rl; 
 writing-mode: vertical-rl;
   position: relative;
@@ -370,7 +370,7 @@ animation-direction:normal;/*7で解説*/
   width: 100vw;
   height: 110vh;
   background: #4E9BFF;
-  z-index: 30;
+  z-index: 10;
   visibility: hidden;
   position: fixed;
   margin-top: -90px;
