@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+
+<!-- Mirrored from www.bit.or.jp/bita_recruit/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Feb 2023 07:43:17 GMT -->
 <head>
 	<meta charset="utf-8">
 	<title>株式会社ビット・エイ│採用サイト</title>
@@ -20,13 +22,17 @@
 	<!--link href="images/favicon.ico" id="favicon" rel="icon">
 	<link href="images/apple-touch-icon.png" rel="apple-touch-icon"-->
 	<link href="style.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
 <link rel="stylesheet" href="reset.css" type="text/css" media="all">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<script src="https://kit.fontawesome.com/27593dd9b8.js" crossorigin="anonymous"></script>
+<!--<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
+
+<script src="../../kit.fontawesome.com/27593dd9b8.js" crossorigin="anonymous"></script>
 <!-- Google tag (gtag.js) -->
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XSRQQ27HZL">
@@ -90,46 +96,33 @@
 	       ]
 	       },
 	</script>
-	<script>
-	 $(function(){
-	   // #で始まるリンクをクリックしたら実行されます
-	   $('a[href^="#"]').click(function() {
-	     // スクロールの速度
-	     var speed = 400; // ミリ秒で記述
-	     var href= $(this).attr("href");
-	     var target = $(href == "#" || href == "" ? 'html' : href);
-	     var position = target.offset().top;
-	     var hd_height = $('.l-header').height();
-	     $('body,html').animate({scrollTop:position}, speed, 'swing');
-	     return false;
-	   });
-	 });
-	 
-	 $(function () {
-  $(".slider").slick({
-    arrows: true,
+<script type="text/javascript">
+  $('.slide').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
     autoplay: false,
-    adaptiveHeight: true,
-    centerMode: true,
-    centerPadding: "15%",
     dots: true,
-    variableWidth: true,
+    accessibility: true,
+    arrows: true,
+    swipe: true,
+    swipeToSlide: true
   });
-});
 
-
-	</script>
+  $('.slide').bind('touchstart', function() {
+    return true;
+  });
+</script>
 </head>
 <body>
 <!--topsub common-->
-		<header id="header"><a href="index.html">
+		<header id="header"><a href="index-2.html">
 		<img alt="株式会社ビット・エイ採用サイト" class="rectuit-logo" src="images/logo.png"> </a>
 			<div class="navigation" id="fixed-header">
 <input type="checkbox" id="overlay-input">
 <label for="overlay-input" id="overlay-button"><span></span></label>
   <div id="overlay">
     <ul>
-      <li><a href="index.html">株式会社ビット・エイ　採用サイト</a></li>
+      <li><a href="index-2.html">株式会社ビット・エイ　採用サイト</a></li>
       <li><a href="contents/about.html">会社概要</a></li>
       <li><a href="contents/works.html">事業内容</a></li>
       <li><a href="contents/recruit.html">採用情報</a></li>
@@ -168,7 +161,7 @@
 		<section class="top-view">
 			<div class="top-title01">
 				<h1 class="fadeIn">踏み出せ<br>
-				<p>　新たな一歩</p></h1></div>
+				<p>　　新たな一歩</p></h1></div>
 				<div class="top-title02">
 				<h3 class="fadeIn-late">BIT-A RECRUITING</h3>
 			</div>
@@ -192,12 +185,12 @@
 				NEWS
 			</div>
 			<div class="div02">
-				23.02.13<br>
+				23.02.20<br>
 			</div>
 			<div class="div03">
-				2/17(金)開催&nbsp;にいがたIT業界<br>セミナーに参加します！<!-- 30字以内厳守 -->
+				イベント日程を更新しました！<!-- 30字以内厳守 -->
 			</div>
-			<div class="div04"><img src="images/newsp1.jpg" width="100%" alt=""></div></a>
+			<div class="div04"><img src="images/newsp2.jpg" width="100%" alt=""></div></a>
 		</section>
 		
 					<div class="top-svg-left">
@@ -241,39 +234,51 @@
                         <path id="blob2" fill="url(#gradient-p)">
                             <animate attributeName="d" dur="10200ms" repeatCount="indefinite" values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;"></animate>
                         </path></svg>
-			</div>
-		<div class="title"><a id="news">
-			<h2>NEWS</h2></a>
-		</div>
+</div>
+<div class="title"><a id="news">
+<h2>NEWS</h2></a>
+</div>
 
-		<section class="">
-            <div class="news-container">
-			<article class="news-block">
-			<a href="https://evekatsu.com/events/8653" target="_blank">
-				<img src="images/newsp1.jpg" alt="ニュースリリース">
-<h2>2/17(金)開催&nbsp;にいがたIT業界セミナーに参加します！</h2>
-<p>2023.02.13</p>
+<section class="">
+<div class="news-container">
+
+<!--article class="news-block">
+<a href="https://job.mynavi.jp/conts/event/2024/7535/index.html" target="_blank">
+<img src="images/newsp3.jpg" alt="ニュースリリース">
+<h2>3/1(水)開催&nbsp;就職EXPO 新潟会場に参加します！</h2>
+<p>23.02.20</p>
 </a>
-			</article>
-            <article class="news-block">
-				<a href="https://job.mynavi.jp/23/pc/corpinfo/displayMypageTop/index/?corpId=204241" target="_blank">
-				<img src="images/newsp2.jpg" alt="ニュースリリース">
+</article-->
+
+<article class="news-block">
+<a href="contents/recruit.html" target="_blank">
+<img src="images/newsp2.jpg" alt="ニュースリリース">
+<h2>イベント日程を更新しました！</h2>
+<p>2023.02.20</p>
+</a>
+</article>
+
+<article class="news-block">
+<a href="https://job.mynavi.jp/23/pc/corpinfo/displayMypageTop/index/?corpId=204241" target="_blank">
+<img src="images/newsp2.jpg" alt="ニュースリリース">
 <h2>マイナビ2023&nbsp;企業マイページ更新しました！</h2>
-<p>2023.02.13</p>
+<p>2023.02.20</p>
 </a>
-			</article>
-            <article class="news-block">
-				<a href="https://job.rikunabi.com/2024/contents/article/c~event~webseminar~detail~230217_web/w/?modern=1&clk=r21rn3825" target="_blank">
-				<img src="images/newsp3.jpg" alt="ニュースリリース">
-<h2>2/17(金)開催&nbsp;就活直前WEBライブに参加します！</h2>
-<p>23.02.13</p>
+</article>
+
+<article class="news-block">
+<a href="diaryofstruggle/index.html" target="_blank">
+<img src="images/newsp1.png" alt="ニュースリリース">
+<h2>新入社員奮闘記「第2回 大寒波到来！」公開しました！</h2>
+<p>23.01.30</p>
 </a>
-			</article>
-        </div>
-            <div class="btn-viewmore">
-                <a href="contents/recruit.html#nabi">View more</a>
-            </div>
-		</section>
+</article>
+
+</div>
+<div class="btn-viewmore">
+<a href="contents/recruit.html#nabi">View more</a>
+</div>
+</section>
 		
 		
 							<div class="green-svg1">
@@ -338,7 +343,7 @@
 <a href="contents/course.html" target="_blank">
 <center><picture>
   <source srcset="images/course-ttl2s.jpg" media="(max-width: 540px)">
-  <img src="images/course-ttl2.png">
+  <img src="images/course-ttl2.png" alt="">
 </picture></center>
 
 	</a>
@@ -360,9 +365,9 @@
 				<section class="interview">
 			<div class="interview-wrap">INTERVIEW</div>
 <div class="slider">   
-    <div><a href="https://www.youtube.com/watch?v=jBORJRbgsV0&t=2s"><img src="images/intewview_slide1.jpg" alt="EC・情報系システム部 N・T"></a></div>
+    <div><a href="https://www.youtube.com/watch?v=jBORJRbgsV0&amp;t=2s"><img src="images/intewview_slide1.jpg" alt="EC・情報系システム部 N・T"></a></div>
     <div><a href="https://www.youtube.com/watch?v=DPz-xEJSLlw"><img src="images/intewview_slide2.jpg" alt=""></a></div>   
-    <div><a href="https://www.youtube.com/watch?v=ijXjk2qn_no&t=1s"><img src="images/intewview_slide3.jpg" alt="カードシステム部 K・K"></a></div>
+    <div><a href="https://www.youtube.com/watch?v=ijXjk2qn_no&amp;t=1s"><img src="images/intewview_slide3.jpg" alt="カードシステム部 K・K"></a></div>
         <div><a href="https://youtube.com/watch?v=hbsUp3C_dhw"><img src="images/intewview_slide4.jpg" alt=""></a></div>
         
 
@@ -372,11 +377,17 @@
 		</div>	
 				
 </section>
+<div class="slide-wrapper">
+  <div class="slide">
+    <div class="slide-item"><iframe width="560" height="315" src="your youtube url" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="slide-item"><iframe width="560" height="315" src="your youtube url" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="slide-item"><iframe width="560" height="315" src="your youtube url" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  </div>
+</div>
 
-		</div>
 
 				<div class="inner1000">	
-<a href="https://www.bit.or.jp/bita_recruit/22_shinzin/index.html" target="_blank">
+<a href="22_shinzin/index.html" target="_blank">
 <center><picture>
   <source srcset="images/22_shinzin_02s.jpg" media="(max-width: 540px)">
   <img src="images/22_shinzin_02.jpg" alt="新入社員がつくったリクルートサイト NEWCOMER">
@@ -471,11 +482,13 @@ TEL:03-6811-6217<br>FAX:03-6811-7728</p></a></li>
 
     <!--JQ-->
 
-    <script src="../../../code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--<script src="../code.jquery.com/jquery-3.4.1.min.html"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
     <!--JS-->
-    <script src="js/js.js"></script>
+    <!--<script src="js/js.js"></script>-->
 
 </body>
 
+
+<!-- Mirrored from www.bit.or.jp/bita_recruit/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Feb 2023 07:43:29 GMT -->
 </html>

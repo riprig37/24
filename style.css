@@ -45,12 +45,13 @@ a {
 .top-title01 {
   margin: -40px 0 0 0;
   z-index: 5;
--webkit-writing-mode: vertical-rl; 
+  -webkit-writing-mode: vertical-rl; 
 -moz-writing-mode: vertical-rl; 
 -ms-writing-mode: vertical-rl; 
 writing-mode: vertical-rl;
-  /*position: relative;*/
+  position: relative;
   display: inline-block;
+  right: -1%;
 }
 .top-title01 h1{
   
@@ -206,6 +207,39 @@ _:future,
   }
   .slider .slick-arrow:before{
       font-size: 30px!important;
+    }
+
+    a.entry-button {
+      width: 80px!important;
+      height: 80px!important;
+      line-height: 80px!important;
+      background-image: linear-gradient(to top, #ffffff 0%, #ffffff 80%, #ffffff 100%);
+      border-radius: 50%;
+      color: #000000;
+      text-shadow: 0 1px #fff;
+      text-align: center;
+      font-size: 1rem!important;
+      font-weight: 700;
+      cursor: pointer;
+      border: 5px solid #000000;
+      font-family: sans-serif;
+      transition: all 0.2s ease;
+      z-index: 5;
+      position:fixed;	
+    bottom:20px!important;
+    right:20px!important;
+    font-weight: 700;
+    }
+    a.entry-button:hover {
+      transform: scale(1.1);
+    }
+    
+    a.entry-button:active {
+      box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+    }
+    
+    a.entry-button:focus {
+      box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
     }
 
 }
@@ -435,7 +469,7 @@ a.entry-button {
   line-height: 120px;
   background-image: linear-gradient(to top, #ffffff 0%, #ffffff 80%, #ffffff 100%);
   border-radius: 50%;
-  color: #000000!important;
+  color: #000;
   text-shadow: 0 1px #fff;
   text-align: center;
   font-size: 1.5rem;
@@ -665,6 +699,41 @@ align-items: center;
   color:#fff;
   font-size: 5em;
 }
+/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*
+/* 動画表示領域（表示サイズ）の設定 */
+.slide-wrapper {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto
+}
+
+/* レスポンシブ対応 */
+.slide-item {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.slide-item iframe {
+  position: absolute;
+  top:   0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 背景が白の場合に表示できるように黒文字としている */
+.slick-next:before {
+  content: '→';
+  color: black;
+}
+
+.slick-prev:before {
+  content: '←';
+  color: black;
+}
+/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*
+
 .slider{
   width:100%;
   margin:0 auto;
@@ -2073,19 +2142,7 @@ hr.bita-bar {
 /* subpage-column2の装飾 */
 }
 
-/*-----------------------------------------------------------
-		PROJECTSTORY表示・非表示ボタン
------------------------------------------------------------*/
 
-/*全体*/
-
-/*ボタン装飾*/
-
-/*ボタンホバー時*/
-
-/*チェックは見えなくする*/
-
-/*中身を非表示にしておく*/
 
 /*クリックで中身表示*/
 @media screen and (max-width: 768px) {
@@ -2173,3 +2230,4 @@ hr.bita-bar {
     padding: 0;
   }
 }
+
