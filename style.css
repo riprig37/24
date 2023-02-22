@@ -1430,7 +1430,7 @@ position: sticky;
     width: 100vw;
     height: 150vh;
     background: #4E9BFF;
-    z-index: 2;
+    z-index: 10;
     visibility: hidden;
     position: fixed;
     
