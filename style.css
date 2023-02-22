@@ -49,8 +49,8 @@ a {
 -moz-writing-mode: vertical-rl; 
 -ms-writing-mode: vertical-rl; 
 writing-mode: vertical-rl;
-  position: relative;
-  /*display: inline-block;*/
+  /*position: relative;*/
+  display: inline-block;
 }
 .top-title01 h1{
   
