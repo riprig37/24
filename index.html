@@ -79,7 +79,18 @@ $(function(){
     centerMode: true,
     centerPadding: "15%",
     dots: true,
-    /*variableWidth: true,*/
+    responsive: [
+      {
+        breakpoint: 640, // 399px以下のサイズに適用
+        settings: {
+			autoplay: false,
+    adaptiveHeight: true,
+    centerMode: true,
+    centerPadding: "0%",
+    dots: true,
+        },
+      },
+    ],
   });
 });
 </script>
@@ -412,7 +423,7 @@ $(function(){
 			</div>
 			   
 				<section class="interview">
-			<div class="interview-wrap">INTERVIEW</div>
+			<div class="interview-wrap">INTERVIEW<p> 　若手社員に入社してからの感想を聞いてみました</p></div>
 <div class="video-wrap">
   <ul class="slick">
     <li>
@@ -468,7 +479,7 @@ $(function(){
 			</div>
 			
 				<section class="interview">
-			<div class="interview-wrap">OFFICE VIEW</div>
+			<div class="interview-wrap">OFFICE VIEW<p>　社内風景を360度カメラで撮影してみました</p></div>
 <div class="video-wrap">
   <ul class="slick">
     <li>
