@@ -699,40 +699,59 @@ align-items: center;
   color:#fff;
   font-size: 5em;
 }
-/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*
-/* 動画表示領域（表示サイズ）の設定 */
-.slide-wrapper {
-  width: 100%;
-  max-width: 560px;
-  margin: 0 auto
+
+.video-wrap {
+  width:100%;
+  margin:0 auto;
+
 }
 
-/* レスポンシブ対応 */
-.slide-item {
+.slick li div {
   position: relative;
-  width: 100%;
+  width: 91%;
   padding-top: 56.25%;
 }
 
-.slide-item iframe {
+.slick li div iframe {
   position: absolute;
-  top:   0;
-  right: 0;
+  top: 0;
+  left: 5%;
   width: 100%;
   height: 100%;
 }
+.slick iframe a:hover{
+  opacity: .7;
+}
+/*---------- 矢印 ----------*/
+.slick-next{
+  right:12%!important;
+  /*margin-right: 0.1vw!important;
+  margin-left: 0.1vw!important;*/
 
-/* 背景が白の場合に表示できるように黒文字としている */
-.slick-next:before {
-  content: '→';
-  color: black;
+}
+.slick-prev{
+  left:12%!important;
+  z-index: 1;
+
+}
+.slick-arrow{
+  width: initial!important;
+  height: initial!important;
+  z-index:2!important;
+
+}
+.slick-arrow:before{
+  font-size: 50px!important;
+}
+@media screen and (max-width:640px) {
+  .wrap {
+    width: 100%;
+  }
+  .slick-arrow:before{
+    font-size: 20px!important;
+  }
 }
 
-.slick-prev:before {
-  content: '←';
-  color: black;
-}
-/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*
 
 .slider{
   width:100%;
@@ -745,35 +764,13 @@ align-items: center;
 	width:80%;
   margin:0 auto;
 }
-.slider a:hover{
-  opacity: .7;
-}
+
 /*-------- 高さ調整 ----------*/
 .slider .slick-slide{
 	height:auto!important;
 }
 
-/*---------- 矢印 ----------*/
-.slider .slick-next{
-    right:20%!important;
-    margin-right: 0.1vw!important;
-    margin-left: 0.1vw!important;
 
-}
-.slider .slick-prev{
-    left:20%!important;
-    z-index: 1;
-
-}
-.slider .slick-arrow{
-    width: initial!important;
-    height: initial!important;
-    z-index:2!important;
-
-}
-.slider .slick-arrow:before{
-    font-size: 50px!important;
-  }
 
     .interview-btn-viewmore a {
       display: flex;
@@ -1108,7 +1105,7 @@ border-right: 2px solid #000000;
     .side_link {
       position: fixed;
       right: 0;
-      top: 45%;
+      top: 35%;
       z-index: 7;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%);
@@ -1132,31 +1129,18 @@ border-right: 2px solid #000000;
       right: -138px;
     }
     
-    .side_link a {
+    .side_link_comic a {
       font-weight: 700;
       line-height: 1;
       font-size: 15px;
       color: #fff;
-      /*display: flex;*/
-      
-
-      /*-webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;*/
-      
     }
     
-    .side_link a:hover{
+    .side_link_comic a:hover{
       opacity: .7;
     }
     
-    .side_link li:nth-child(2) a {
-      background: #E3C520;
-    }
-    
+
     .side_link p {
       width: 1em;
       font-weight: inherit;
@@ -1174,7 +1158,48 @@ border-right: 2px solid #000000;
               transform: rotate(0deg);
     }
    
+    .side_link_comic {
+      position: fixed;
+      right: 0;
+      top: 65%;
+      z-index: 7;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      -webkit-transition: right 0.4s ease;
+      transition: right 0.4s ease;
+      text-align: center;
+      justify-content: center;
+      writing-mode: vertical-rl;
+      background: #51eb5e;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      width: 48px;
+      height: 180px;
+      align-items: center;
+    }
+    .side_link_comic a:hover{
+      opacity: .7;
+    }
 
+
+    .sidetext {
+      margin-right: 12px;
+    }
+    
+    .side_link._hide {
+      right: -138px;
+    }
+    
+    .side_link a {
+      font-weight: 700;
+      line-height: 1;
+      font-size: 15px;
+      color: #fff;
+    }
+    
+    .side_link a:hover{
+      opacity: .7;
+    }
     
     .title h2 {
       font-size: 5em;
@@ -1573,7 +1598,23 @@ position: sticky;
     .side_link {
       position: fixed;
       right: 0;
-      top: 50%;
+      top: 35%;
+      z-index: 7;
+      width: 25px;
+      height: 180px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      -webkit-transition: right 0.4s ease;
+      transition: right 0.4s ease;
+      opacity: .8;
+    }
+
+    .side_link_comic {
+      position: fixed;
+      right: 0;
+      top: 65%;
       z-index: 7;
       width: 25px;
       height: 180px;

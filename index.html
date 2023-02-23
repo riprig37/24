@@ -22,12 +22,67 @@
 	<!--link href="images/favicon.ico" id="favicon" rel="icon">
 	<link href="images/apple-touch-icon.png" rel="apple-touch-icon"-->
 	<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/reset.css">
+<!--<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/slick.js"></script>
 
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+<script>
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var players = {};
+function onYouTubeIframeAPIReady() {
+  $(".slick iframe").each(function(id) {
+      var $iframe = $(this).get(0);
+      if ($iframe) {
+        players = new YT.Player($iframe, {
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+  });
+}
+function onPlayerReady() {
+  $('.slick').slick('slickPlay');
+}
+function onPlayerStateChange(obj) {
+  if (obj.data == 1) {
+    $('.slick').slick('slickPause');
+  } else if (obj.data == 2) {
+    $('.slick').slick('slickPlay');
+  }
+}
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+$(function(){
+  $(".slick").on("beforeChange", function(event, slick) {
+    var currentSlide, player, command;
+    currentSlide = $(slick.$slider).find(".slick-current");
+    player = currentSlide.find("iframe").get(0);
+    command = {
+      "event": "command",
+      "func": "pauseVideo"
+    };
+    if ( player != undefined ) {
+      player.contentWindow.postMessage(JSON.stringify(command), "*");
+    }
+  });
+  $(".slick").slick({
+    autoplay: false,
+    adaptiveHeight: true,
+    centerMode: true,
+    centerPadding: "15%",
+    dots: true,
+    /*variableWidth: true,*/
+  });
+});
+</script>
 
 <link rel="stylesheet" href="reset.css" type="text/css" media="all">
 <!--<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
@@ -96,22 +151,7 @@
 	       ]
 	       },
 	</script>
-<script type="text/javascript">
-  $('.slide').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    dots: true,
-    accessibility: true,
-    arrows: true,
-    swipe: true,
-    swipeToSlide: true
-  });
 
-  $('.slide').bind('touchstart', function() {
-    return true;
-  });
-</script>
 </head>
 <body>
 <!--topsub common-->
@@ -154,6 +194,15 @@
 			<a href="images/pamphlet.pdf" target="_blank" >
 				<p class="sidetext">パンフレットはこちら　<i class="fa-solid fa-book"></i></p>
 			</a>
+			
+		</li>
+	</ul>
+		<ul class="side_link_comic">
+		<li>
+			<a href="diaryofstruggle/index.html" target="_blank" >
+				<p class="sidetext">マンガで社員紹介　<i class="fa-regular fa-face-smile"></i></p>
+			</a>
+			
 		</li>
 	</ul>
 <!--固定ボタンここまで-->
@@ -364,26 +413,36 @@
 			   
 				<section class="interview">
 			<div class="interview-wrap">INTERVIEW</div>
-<div class="slider">   
-    <div><a href="https://www.youtube.com/watch?v=jBORJRbgsV0&amp;t=2s"><img src="images/intewview_slide1.jpg" alt="EC・情報系システム部 N・T"></a></div>
-    <div><a href="https://www.youtube.com/watch?v=DPz-xEJSLlw"><img src="images/intewview_slide2.jpg" alt=""></a></div>   
-    <div><a href="https://www.youtube.com/watch?v=ijXjk2qn_no&amp;t=1s"><img src="images/intewview_slide3.jpg" alt="カードシステム部 K・K"></a></div>
-        <div><a href="https://youtube.com/watch?v=hbsUp3C_dhw"><img src="images/intewview_slide4.jpg" alt=""></a></div>
-        
-
+<div class="video-wrap">
+  <ul class="slick">
+    <li>
+      <div>
+      <iframe src="https://www.youtube-nocookie.com/embed/jBORJRbgsV0?rel=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </li>
+    <li>
+      <div>
+      <iframe src="https://www.youtube-nocookie.com/embed/ijXjk2qn_no?rel=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </li>
+    <li>
+      <div>
+      <iframe src="https://www.youtube-nocookie.com/embed/DPz-xEJSLlw?rel=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </li>
+        <li>
+      <div>
+      <iframe src="https://www.youtube-nocookie.com/embed/hbsUp3C_dhw?rel=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </li>
+  </ul>
 </div>
 <div class="interview-btn-viewmore">
 			<a href="contents/staff.html">View more</a>
 		</div>	
 				
 </section>
-<div class="slide-wrapper">
-  <div class="slide">
-    <div class="slide-item"><iframe width="560" height="315" src="your youtube url" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-    <div class="slide-item"><iframe width="560" height="315" src="your youtube url" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-    <div class="slide-item"><iframe width="560" height="315" src="your youtube url" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-  </div>
-</div>
+
 
 
 				<div class="inner1000">	
@@ -407,17 +466,34 @@
                     <path id="blob4" fill="url(#gradient)" style="opacity: 1;"><animate attributeName="d" dur="17900ms" repeatCount="indefinite" values="M411.71818,339.87391Q393.61186,429.74783,302.23794,426.16285Q210.86403,422.57787,122.32727,388.31581Q33.79051,354.05375,61.55534,263.35692Q89.32016,172.66008,145.95613,107.46324Q202.59209,42.2664,289.95613,66.5581Q377.32016,90.8498,403.57233,170.4249Q429.82451,250,411.71818,339.87391Z;M429.79847,339.54154Q392.67727,429.08308,294.97368,455.00137Q197.27008,480.91966,143.94598,403.56786Q90.62188,326.21607,83.52769,246.22992Q76.43351,166.24376,136.8518,92.77008Q197.27008,19.29641,287.1482,55Q377.02632,90.70359,421.97299,170.3518Q466.91966,250,429.79847,339.54154Z;M420.7122,331.4339Q380.09423,412.86779,301.16508,392.29219Q222.23594,371.7166,157.11322,349.24982Q91.99051,326.78305,53.64135,232.38203Q15.29219,137.98101,118.09898,129.47187Q220.90577,120.96273,294.67458,111.25967Q368.44339,101.55661,414.88678,175.77831Q461.33017,250,420.7122,331.4339Z;M411.71818,339.87391Q393.61186,429.74783,302.23794,426.16285Q210.86403,422.57787,122.32727,388.31581Q33.79051,354.05375,61.55534,263.35692Q89.32016,172.66008,145.95613,107.46324Q202.59209,42.2664,289.95613,66.5581Q377.32016,90.8498,403.57233,170.4249Q429.82451,250,411.71818,339.87391Z"></animate>
                     </path></svg>
 			</div>
+			
+				<section class="interview">
+			<div class="interview-wrap">OFFICE VIEW</div>
+<div class="video-wrap">
+  <ul class="slick">
+    <li>
+      <div>
+      <iframe src="https://www.youtube-nocookie.com/embed/W0ddNLKIols?rel=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </li>
+    <li>
+      <div>
+      <iframe src="https://www.youtube-nocookie.com/embed/5omR6f_5M2g?rel=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </li>
+    <li>
+      <div>
+      <iframe src="https://www.youtube-nocookie.com/embed/YQzhUJbJq54?rel=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </li>
 
-		<div class="title">
-			<h2>OFFICE</h2>
-		</div>
-<div id="video">
-	<div class="video"><center>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/W0ddNLKIols" title="【社内風景360°】 4Fフロア編" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+  </ul>
 </div>
 
+				
+</section>
 
-	</div>
+
 
 	</main>
 
@@ -485,7 +561,7 @@ TEL:03-6811-6217<br>FAX:03-6811-7728</p></a></li>
     <!--<script src="../code.jquery.com/jquery-3.4.1.min.html"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
     <!--JS-->
-    <!--<script src="js/js.js"></script>-->
+    <script src="js/js.js"></script>
 
 </body>
 
