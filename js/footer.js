@@ -5,7 +5,7 @@ var html = "";
 html += '<div id="footer">';
 
 html += '<!----- フッターロゴ ----->';
-html += '<div id="footer-logo"><a href="https://www.bit.or.jp/"><img src="images/footer-logo.png" alt="ビット・エイ" width="158" height="56"></a></div>';
+html += '<div id="footer-logo"><a href="/"><img src="images/footer-logo.png" alt="ビット・エイ" width="158" height="56"></a></div>';
 
 
 html += '<!----- フッターナビゲーション ----->';
