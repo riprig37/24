@@ -1922,7 +1922,8 @@ color: #FFF!important;
   font-size: 2em;
 }
 .interview-wrap p {
-  font-size:10px; display:inline-block;
+  font-size:12px; display:inline-block;
+  line-height: 150%;
 }
 
 }
